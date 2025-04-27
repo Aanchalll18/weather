@@ -84,5 +84,14 @@ async function fetchWeatherInfo(coordinates){
 }
 function renderweatherInfo(data){
     cityName.innerText=data?.name;
-    
+    countryIcon.src = `https://flagcdn.com/${data?.sys?.country.toLowerCase()}.png`;
+    countryIcon.width = 144;
+    countryIcon.height = 188;
+    climate.innerText=data?.weather?.[0]?.description
+    climateIcon.src=`http://openweathermap.org/img/w/${data?.weather?.[0]?.icon}.png`
+
+    temperature.innerText=data?.main?.temp;
+    windspeed.innerText=data?.wind?.speed;
+    humidity.innerText=data?.main?.humidity;
+    cloudiness.innerText=data?.clouds?.all;
 }
