@@ -82,3 +82,6 @@ async function fetchWeatherInfo(coordinates){
         
     }
 }
+function renderweatherInfo(data){
+
+}
