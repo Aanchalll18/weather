@@ -95,3 +95,5 @@ function renderweatherInfo(data){
     humidity.innerText=data?.main?.humidity;
     cloudiness.innerText=data?.clouds?.all;
 }
+
+grantAccessButton.addEventListener('click',getLocation);  
