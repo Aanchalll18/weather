@@ -97,3 +97,4 @@ function renderweatherInfo(data){
 }
 
 grantAccessButton.addEventListener('click',getLocation);  
+
