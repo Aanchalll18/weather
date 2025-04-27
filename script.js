@@ -83,5 +83,6 @@ async function fetchWeatherInfo(coordinates){
     }
 }
 function renderweatherInfo(data){
-
+    cityName.innerText=data?.name;
+    
 }
