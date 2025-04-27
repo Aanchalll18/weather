@@ -3,7 +3,7 @@ const userTab = document.querySelector("[data-userWeather]");
 const searchTab = document.querySelector("[data-usersearchWeather]");
 
 // Search form and input
-const searchForm = document.querySelector("form");
+const searchForm = document.querySelector("[data-searchform]");
 const searchInput = document.querySelector("[data-searchInput]");
 
 // Grant Location Section
